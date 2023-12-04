@@ -879,8 +879,7 @@ module.exports = {
   waterSystem : async (req, res) => {
     const queryGet = "SELECT * FROM parammachine_saka.`cMT-BWT_AirMancur_Sehari_data`;"
     console.log(queryGet);
-
-    db.query(queryGet,(err, result) => {
+    db2.query(queryGet,(err, result) => {
       return response.status(200).send(result);
     })
   }
